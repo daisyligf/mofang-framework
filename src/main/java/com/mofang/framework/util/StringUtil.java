@@ -83,6 +83,24 @@ public class StringUtil
 			return false;
 		}
 	}
+	
+	/**
+	 * 判断字符串是否为短整型
+	 * @param value
+	 * @return
+	 */
+	public static boolean isShort(String value)
+	{
+		try 
+		{
+			Short.parseShort(value);
+			return true;
+			
+		} catch (Exception e) 
+		{
+			return false;
+		}
+	}
 
 	/**
 	 * 判断字符串是否为单精度浮点型
@@ -112,6 +130,42 @@ public class StringUtil
 		try 
 		{
 			Double.parseDouble(value);
+			return true;
+			
+		} catch (Exception e) 
+		{
+			return false;
+		}
+	}
+	
+	/**
+	 * 判断字符串是否为布尔型
+	 * @param value
+	 * @return
+	 */
+	public static boolean isBoolean(String value)
+	{
+		try 
+		{
+			Boolean.parseBoolean(value);
+			return true;
+			
+		} catch (Exception e) 
+		{
+			return false;
+		}
+	}
+	
+	/**
+	 * 判断字符串是否为字节型
+	 * @param value
+	 * @return
+	 */
+	public static boolean isByte(String value)
+	{
+		try 
+		{
+			Byte.parseByte(value);
 			return true;
 			
 		} catch (Exception e) 

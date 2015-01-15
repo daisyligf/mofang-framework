@@ -706,8 +706,10 @@ public abstract class AbstractMysqlSupport<P>
 			
 			String columnName = "";
 			ColumnName dataField = field.getAnnotation(ColumnName.class);
-			if(null != dataField)
-				columnName = dataField.name();
+			if(null == dataField)
+				continue;
+			
+			columnName = dataField.name();
 			
 			PrimaryKey primaryKey = field.getAnnotation(PrimaryKey.class);
 			Boolean isPrimaryKey = false;
@@ -756,8 +758,10 @@ public abstract class AbstractMysqlSupport<P>
 			
 			String columnName = "";
 			ColumnName dataField = field.getAnnotation(ColumnName.class);
-			if(null != dataField)
-				columnName = dataField.name();
+			if(null == dataField)
+				continue;
+			
+			columnName = dataField.name();
 			
 			PrimaryKey primaryKey = field.getAnnotation(PrimaryKey.class);
 			Boolean isPrimaryKey = false;

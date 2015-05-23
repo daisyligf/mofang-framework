@@ -44,31 +44,31 @@ public class RowData
 	public Integer getInteger(int index) throws Exception
 	{
 		checkBound(index);
-		return items[index] == null ? null : (Integer)items[index];
+		return items[index] == null ? null : Integer.parseInt(items[index].toString());
 	}
 	
 	public Long getLong(int index) throws Exception
 	{
 		checkBound(index);
-		return items[index] == null ? null : (Long)items[index];
+		return items[index] == null ? null : Long.parseLong(items[index].toString());
 	}
 	
 	public Double getDouble(int index) throws Exception
 	{
 		checkBound(index);
-		return items[index] == null ? null : (Double)items[index];
+		return items[index] == null ? null : Double.parseDouble(items[index].toString());
 	}
 	
 	public Boolean getBoolean(int index) throws Exception
 	{
 		checkBound(index);
-		return items[index] == null ? null : (Boolean)items[index];
+		return items[index] == null ? null : Boolean.parseBoolean(items[index].toString());
 	}
 	
 	public Float getFloat(int index) throws Exception
 	{
 		checkBound(index);
-		return items[index] == null ? null : (Float)items[index];
+		return items[index] == null ? null : Float.parseFloat(items[index].toString());
 	}
 	
 	public Date getDate(int index) throws Exception

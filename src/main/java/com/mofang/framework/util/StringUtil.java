@@ -278,6 +278,7 @@ public class StringUtil
 		
 		value = value.replace("'", "''");
 		value = value.replace("\"", "\\\"");
+		value = value.replace("\\", "\\\\");
 		
 		return value;
 	}

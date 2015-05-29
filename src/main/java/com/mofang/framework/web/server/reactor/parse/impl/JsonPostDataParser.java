@@ -22,6 +22,7 @@ public class JsonPostDataParser implements PostDataParser
 			return null;
 	
 		Map<String, String> paramMap = new HashMap<String, String>();
+		/*
 		JSONObject json = new JSONObject(postData);
 		Iterator<?> iterator = json.keys();
 		while(iterator.hasNext())
@@ -29,6 +30,7 @@ public class JsonPostDataParser implements PostDataParser
 			String key = (String) iterator.next();
 			paramMap.put(key, json.optString(key));
 		}
+		*/
 		return paramMap;
 	}
 }

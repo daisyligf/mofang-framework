@@ -285,7 +285,7 @@ public abstract class AbstractMysqlSupport<P>
 	
 	public boolean updateByWhere(P model, Operand operand) throws Exception
 	{
-		return updateByWhere(model, operand);
+		return updateByWhere(model, operand, null);
 	}
 	
 	public boolean updateByWhere(P model, Operand operand, Set<String> ignoreFields) throws Exception

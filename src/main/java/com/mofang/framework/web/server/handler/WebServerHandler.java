@@ -204,7 +204,8 @@ public class WebServerHandler extends ChannelInboundHandlerAdapter
         else
         {
         		res.headers().set(CONNECTION, Values.KEEP_ALIVE);
-            ctx.write(res);
+            //ctx.write(res);
+        		ctx.writeAndFlush(res);
         }
     }
     
